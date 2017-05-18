@@ -1,0 +1,8 @@
+if(file_exists("AethyrConfig.sav")) file_delete("AethyrConfig.sav")
+ini_open("AethyrConfig.sav")
+ini_write_real("Save1","musicVol",global.musVol)
+ini_write_real("Save1","sfxVol",global.sfxVol)
+ini_write_real("Save1","gibs",global.gibsOn)
+ini_write_real("Save1","blood",global.bloodOn)
+ini_write_real("Save1","parallax",global.parallax)
+ini_close()
